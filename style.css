@@ -1,0 +1,74 @@
+/* Full Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #84bbcf, #c7cc32);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container */
+.container {
+    background: rgb(215, 160, 40);
+    padding: 30px;
+    width: 350px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Title */
+h1 {
+    color: #e8cc11;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Search Box Styling */
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    padding: 10px;
+    width: 65%;
+    border-radius: 8px;
+    border: 2px solid #1f6feb;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 10px 15px;
+    background: #4a648d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background: #80ad20;
+}
+
+/* Weather Info */
+.weather-info {
+    margin-top: 20px;
+    background: #7c9fbe;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.weather-info p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
