@@ -1,33 +1,33 @@
-/* Full Page Styling */
+/* BODY STYLING */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #84bbcf, #c7cc32);
+    background: linear-gradient(135deg, #5696a6, #adae7c);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Main Container */
+/* MAIN CONTAINER */
 .container {
-    background: rgb(215, 160, 40);
+    background: #4e99af;
     padding: 30px;
     width: 350px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0px 10px 30px rgba(178, 198, 79, 0.3);
 }
 
-/* Title */
+/* TITLE */
 h1 {
-    color: #e8cc11;
     font-size: 26px;
+    color: #d99836;
     margin-bottom: 20px;
 }
 
-/* Search Box Styling */
+/* SEARCH BOX */
 .search-box {
     display: flex;
     justify-content: center;
@@ -39,15 +39,15 @@ h1 {
     padding: 10px;
     width: 65%;
     border-radius: 8px;
-    border: 2px solid #1f6feb;
+    border: 2px solid #388070;
     outline: none;
     font-size: 16px;
 }
 
 .search-box button {
     padding: 10px 15px;
-    background: #4a648d;
-    color: white;
+    background: #78529c;
+    color: rgb(186, 122, 122);
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -56,19 +56,36 @@ h1 {
 }
 
 .search-box button:hover {
-    background: #80ad20;
+    background: #552b36;
 }
 
-/* Weather Info */
+/* WEATHER INFO */
 .weather-info {
     margin-top: 20px;
-    background: #7c9fbe;
-    padding: 15px;
-    border-radius: 10px;
 }
 
 .weather-info p {
-    margin: 10px 0;
     font-size: 18px;
-    color: #333;
+    margin: 8px 0;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    .search-box button {
+        width: 100%;
+        margin-top: 10px;
+    }
 }
