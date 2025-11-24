@@ -37,3 +37,6 @@ document.getElementById('search-btn').addEventListener('click', function() {
     }
     fetchWeatherData(city);
 });
+
+
+

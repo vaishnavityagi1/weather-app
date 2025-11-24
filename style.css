@@ -61,14 +61,41 @@ h1 {
     background: #235ca1;
 }
 
-/* WEATHER INFO */
+/* WEATHER INFO CONTAINER */
 .weather-info {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
     margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* WEATHER INFO TEXT */
 .weather-info p {
     font-size: 18px;
     margin: 8px 0;
+}
+
+/* TEMPERATURE SPECIFIC STYLING */
+#temperature {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* CITY NAME */
+#city-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+/* WEATHER DESCRIPTION */
+#weather-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
 }
 
 /* RESPONSIVE DESIGN */
