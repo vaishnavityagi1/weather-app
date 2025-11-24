@@ -76,7 +76,7 @@ h1 {
     margin: 8px 0;
 }
 
-/* TEMPERATURE SPECIFIC STYLING */
+/* TEMPERATURE */
 #temperature {
     font-size: 36px;
     color: #333;
@@ -98,6 +98,39 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* FORECAST CONTAINER */
+.forecast-days {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* FORECAST CARD */
+.day-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+}
+
+.day-date {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.day-temperature {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.day-description {
+    color: #666;
+    font-size: 16px;
+}
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 600px) {
     .container {
@@ -116,5 +149,14 @@ h1 {
     #search-btn {
         width: 100%;
         margin-top: 10px;
+    }
+
+    .forecast-days {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .day-card {
+        width: 80%;
     }
 }

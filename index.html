@@ -8,17 +8,18 @@
     <!-- Linking CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <div class="container">
         <h1>☀ Weather Application</h1>
 
+        <!-- Search Box -->
         <div class="search-box">
             <input type="text" id="city-input" placeholder="Enter city name...">
             <button id="search-btn">Search</button>
         </div>
 
+        <!-- Current Weather Info -->
         <div class="weather-info">
             <p id="city-name">City: --</p>
             <p id="temperature">Temperature: -- °C</p>
@@ -27,10 +28,17 @@
             <p id="wind">Wind: --</p>
             <p id="error"></p>
         </div>
+
+        <!-- 3-Day Forecast -->
+        <div class="forecast">
+            <h2>3-Day Weather Forecast</h2>
+            <div class="forecast-days">
+                <!-- Forecast cards will be added dynamically via JS -->
+            </div>
+        </div>
     </div>
 
     <!-- JavaScript file -->
     <script src="script.js"></script>
-
 </body>
 </html>
