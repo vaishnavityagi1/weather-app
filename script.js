@@ -9,7 +9,7 @@ function fetchWeatherData(city) {
         .then(response => response.json())
         .then(data => {
             if(data.cod === "200") {
-                // Display current weather (first forecast item)
+                // Current weather
                 const current = data.list[0];
                 document.getElementById('city-name').textContent = `City: ${data.city.name}`;
                 document.getElementById('temperature').textContent = `Temperature: ${current.main.temp} °C`;
@@ -37,7 +37,7 @@ function generateWeatherForecast() {
     const forecast = [];
     const currentDate = new Date();
 
-    for (let i = 1; i <= 3; i++) { // Next 3 days
+    for (let i = 1; i <= 3; i++) {
         const day = currentDate.getDate() + i;
         const month = currentDate.getMonth() + 1;
         const year = currentDate.getFullYear();
@@ -60,7 +60,7 @@ function generateWeatherForecast() {
 // Function to display forecast in HTML
 function displayForecast(forecastData) {
     const forecastContainer = document.querySelector(".forecast-days");
-    forecastContainer.innerHTML = ""; // Clear previous forecast
+    forecastContainer.innerHTML = "";
 
     forecastData.forEach(day => {
         const card = document.createElement("div");
