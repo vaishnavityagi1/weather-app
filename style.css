@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #5696a6, #adae7c);
+    background: linear-gradient(135deg, #5faabd, #898c36);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -12,18 +12,18 @@ body {
 
 /* MAIN CONTAINER */
 .container {
-    background: #4e99af;
+    background: #4b82b9;
     padding: 30px;
     width: 350px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0px 10px 30px rgba(178, 198, 79, 0.3);
+    box-shadow: 0px 10px 30px rgba(80, 152, 214, 0.3);
 }
 
 /* TITLE */
 h1 {
     font-size: 26px;
-    color: #d99836;
+    color: #cfa750;
     margin-bottom: 20px;
 }
 
@@ -35,28 +35,30 @@ h1 {
     margin-bottom: 20px;
 }
 
-.search-box input {
+/* INPUT FIELD */
+#city-input {
     padding: 10px;
     width: 65%;
     border-radius: 8px;
-    border: 2px solid #388070;
+    border: 2px solid #4d4fb1;
     outline: none;
     font-size: 16px;
 }
 
-.search-box button {
+/* SEARCH BUTTON */
+#search-btn {
     padding: 10px 15px;
-    background: #78529c;
-    color: rgb(186, 122, 122);
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
     border: none;
     border-radius: 8px;
-    cursor: pointer;
     font-size: 16px;
     transition: 0.3s;
 }
 
-.search-box button:hover {
-    background: #552b36;
+#search-btn:hover {
+    background: #235ca1;
 }
 
 /* WEATHER INFO */
@@ -80,11 +82,11 @@ h1 {
         flex-direction: column;
     }
 
-    .search-box input {
+    #city-input {
         width: 100%;
     }
 
-    .search-box button {
+    #search-btn {
         width: 100%;
         margin-top: 10px;
     }
